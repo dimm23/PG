@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <Match>
+        <Bug pattern="EXS_EXCEPTION_SOFTENING_NO_CONSTRAINTS"/>
+    </Match>
+    <Match>
+        <Class name="ru.secretgroup.sls.licenses.LicenseDto"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+    <Match>
+        <Class name="ru.secretgroup.sls.licenses.LicenseDto$LicenseDtoBuilder"/>
+        <Method name="serializedData"/>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+    <Match>
+        <Class name="ru.secretgroup.sls.licenses.LicenseCreationService"/>
+        <Method name="create"/>
+        <Bug pattern="EXS_EXCEPTION_SOFTENING_NO_CONSTRAINTS"/>
+    </Match>
+</FindBugsFilter>
